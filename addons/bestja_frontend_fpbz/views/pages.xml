@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="layout_logo_show1" inherit_id="website.layout" customize_show="True" name="Show Logo1">
+            <xpath expr="//title" position="replace">
+                <title>
+                    Federacja Polskich Banków Żywności
+                </title>
+            </xpath>
+            <xpath expr="//header//a[@class='navbar-brand logo']" position="replace">
+                <a href="/" class="navbar-brand logo bbb">
+                    <img src="/logo.png"/>
+                </a>
+            </xpath>
+        </template>
+        <template id="main_picture_top" inherit_id="website.layout" customize_show="True" name="Main Picture">
+            <xpath expr="//header" position="inside">
+                <div>
+                    <section class="oe_snippet_body oe_dark mt16 mb16">
+                        <div>
+                            <div id="main_top_photo_text" class="col-md-12" style="background: url('/bestja_frontend_fpbz/static/src/img/pan_z_talerzem.png') no-repeat; min-height: 70%">
+                                <img id="BZ_logo" src="/bestja_frontend_fpbz/static/src/img/BZ_logo.png"/>
+                                <ul id="nav_menu_top" class="navbar navbar-right">
+                                    <li>
+                                        <a>Biuletyn wolontariuszy</a>
+                                        <a>Zostań partnerem</a>
+                                        <a>Zaloguj się</a>
+                                    </li>
+                                </ul>
+                                <div id="main_top_white_text">
+                                    <h1>Rocznie w Polsce marnuje się 9 mln ton jedzenia</h1>
+                                    <h3>2,5 mln osób nie ma dostępu do pełnowartościowej żywności</h3>
+                                    <h2>Pomóż nam to zmienić!</h2>
+                                </div>
+                                <div class="text-center">
+                                    <button id="choose_place" class="btn btn-default btn-lg text-center">wybierz swoją miejscowość</button><br />
+                                </div>
+                                <div class="col-md-4 col-md-offset-4 text-center centered">
+                                    <img class="img mouse_img" src="/bestja_frontend_fpbz/static/src/img/myszka.png"/>
+                                    <br />
+                                    <span id="direction_down">&lt;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </xpath>
+        </template>
+        <template id="new_footer" inherit_id="website.layout" customize_show="True" name="New Footer">
+            <xpath expr="//footer" position="replace">
+                <div class="container-fluid footer_div">
+                    <div class="row clearfix">
+                        <div class="col-footer text-center">
+                            <ul id="footer_icons">
+                                <li>
+                                    <a class="facebook" href="http://facebook.com"></a>
+                                </li>
+                                <li>
+                                    <a class="youtube" href="http://youtube.com"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-footer text-center">
+                            <h4><a href="http://www.wolontariat.bankizywnosci.pl/">O nas</a>
+                                <a href="http://www.wolontariat.bankizywnosci.pl/">Kontakt</a></h4>
+                        </div>
+                        <div class="col-footer text-right copyrights">
+                            <div>
+                                <p style="color: #FF9900">© 2014, Federacja Banków Żywności</p>
+                                <p><a href="http://www.wolontariat.bankizywnosci.pl/">Regulamin</a> <span style="color:white;">|</span>
+                                    <a href="http://www.wolontariat.bankizywnosci.pl/">Polityka prywatności</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</openerp>
