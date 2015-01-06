@@ -20,7 +20,8 @@
         'bestja_files',
         'email_confirmation',
         'quizzes',
-        'bestja_organization_warehouse'
+        'bestja_organization_warehouse',
+        'bestja_frontend_fpbz'
     ],
     'application': True,
 }

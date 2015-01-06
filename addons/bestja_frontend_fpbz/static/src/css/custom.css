@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+
+/* Main snippet */
+#main_top_white_text{
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-style: normal;
+  margin-left: 7%;
+  margin-top: 95px;
+}
+#main_top_white_text h1{
+  font-size: 48px;
+}
+#main_top_white_text h3{
+  font-size: 26px;
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#main_top_white_text h2{
+  font-size: 32px;
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#BZ_logo{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 176px;
+}
+#nav_menu_top{
+  margin-top: 20px;
+}
+#nav_menu_top li{
+  list-style: none;
+  float: left;
+}
+#nav_menu_top li a{
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-right: 30px;
+}
+#nav_menu_top li a:hover{
+  color: #D1D1D1;
+}
+#main_top_photo_text{
+  position: relative;
+  color: #FFFFFF;
+}
+.mouse_img{
+  width: 89px;
+  height: 90px;
+  margin-left: 4px;
+}
+#choose_place{
+  font-weight: bold;
+  height: 55px;
+  background-color: white;
+  font-size: 22px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#direction_down{
+  display: inline-block;
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+  transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  font-size: 36px;
+  color: #000000;
+  text-align: center;
+}
+
+/* End of main snippet */
+
+
+/* Footer */
+
+#footer_icons li{
+  list-style: none;
+  float: left;
+  margin-left: 30px;
+}
+#footer_icons li a{
+  background-image: url('/bestja_frontend_fpbz/static/src/img/stopka_ikonki.png');
+  display: block;
+}
+#footer_icons li a.facebook{
+  background-position: 0 0;
+  width: 35px;
+  height: 45px;
+}
+#footer_icons li a.youtube{
+  background-position: -173px 0;
+  width: 43px;
+  height: 45px;
+}
+.footer_div{
+  background-color: #000000;
+  min-height: 100px;
+  padding-top: 25px;
+}
+.footer_div a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer_div h4 a{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Arial Regular, Arial", sans-serif;
+}
+.col-footer{
+  width:33.3%;
+  min-width: 290px;
+  float: left;
+}
+.copyrights{
+  font-family: "Arial Regular, Arial", sans-serif;
+}
+.copyrights p{
+  font-size: 12px;
+  padding-right: 20px;
+}
+.footer_div span{
+  margin-left: 12px;
+  margin-right: 12px;
+}
+@media screen and (max-width: 991px) {
+  .col-footer {
+    float: none !important;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    min-height: 70px;
+  }
+  .copyrights{
+    text-align: center;
+  }
+  .copyrights p{
+    padding-right: 0;
+  }
+  #footer_icons{
+    margin-left: 20px;
+  }
+}
+/* End of footer */
