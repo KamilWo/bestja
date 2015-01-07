@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--<template id="snippets" inherit_id="website.snippets" name="Clean Theme snippets">
+            <xpath expr="//div[@id='snippet_fpbz']" position="inside">
+                <div class="container-fluid volunteers_newsletter arial_font">
+                            <h1 class="text-center mt32 mb32">Biuletyn wolontariuszy</h1>
+                            <div class="row mt16 mb16">
+                                <div class="col-md-3 text-center">
+                                    <span class="fa fa-suitcase fa-5x"></span>
+                                    <h3 class="mt16 mb16">Wybierz ofertę</h3>
+                                    <div class="text-muted mt16 mb8">Wybierz oferty w oparciu <br />
+                                        o swoje zainteresowania.</div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <span class="fa fa-lock fa-5x"></span>
+                                    <h3 class="mt16 mb16">Zgłoś się</h3>
+                                    <div class="text-muted mt16 mb8">Zgłoszenie na ofertę<br />
+                                    to tylko chwila.</div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <span class="fa fa-heart fa-5x"></span>
+                                    <h3 class="mt16 mb16">Spotkanie</h3>
+                                    <div class="text-muted mt16 mb8">Organizacja zaprosi Cię na<br />
+                                        spotkanie w ciągu 7 dni.<br />
+                                        Poznacie swoje oczekiwania<br />
+                                        i możliwości.</div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <span class="fa fa-heart fa-5x"></span>
+                                    <h3 class="mt16 mb16">Zaproś znajomych</h3>
+                                    <div class="text-muted mt16 mb8">Zaproś znajomych <br />
+                                    i poznaj nowych.</div>
+                                </div>
+                            </div>
+                        </div>
+            </xpath>
+        </template>-->
+    </data>
+</openerp>
