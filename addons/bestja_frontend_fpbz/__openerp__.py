@@ -12,9 +12,14 @@
     # templates, pages, and snippets
     'data': [
         'views/config.xml',
-        'views/pages.xml',
-        'views/snippets.xml',
-        'data/images.xml',
+        
+    # pages
+        'templates/pages/header.xml',
+        'templates/pages/home_page.xml',
+        'templates/pages/footer.xml',
+        
+    # snippets
+        
     ],
     'application': True,
     # Your information
