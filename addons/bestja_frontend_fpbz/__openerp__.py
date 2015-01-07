@@ -12,9 +12,20 @@
     # templates, pages, and snippets
     'data': [
         'views/config.xml',
-        'views/pages.xml',
-        'views/snippets.xml',
-        'data/images.xml',
+        
+    # pages
+        'templates/pages/header.xml',
+        'templates/pages/home_page.xml',
+        'templates/pages/footer.xml',
+        
+    # snippets
+        'templates/snippets/common_snippets.xml',
+        'templates/snippets/main_top_white_text.xml',
+        'templates/snippets/why_is_it_worth.xml',
+        'templates/snippets/map_of_poland.xml',
+        'templates/snippets/quote_div.xml',
+        'templates/snippets/volunteers_newsletter.xml',
+        'templates/snippets/meet_our_volunteers.xml',
     ],
     'application': True,
     # Your information
