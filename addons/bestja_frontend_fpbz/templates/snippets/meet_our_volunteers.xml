@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--<template id="snippets" inherit_id="website.snippets" name="Clean Theme snippets">
+            <xpath expr="//div[@id='snippet_fpbz']" position="inside">
+                <div class="container-fluid meet_our_volunteers arial_font">
+                    <h1 class="text-center mt32 mb32">Poznaj naszych wolontariuszy</h1>
+                    <div class="row row-centered">
+                        <div class="col-md-4 col-centered">
+                            <img class="img img-rounded img-responsive" src="/bestja_frontend_fpbz/static/src/img/dziewczyna_z_ulotkami.png"/>
+                            <h3 class="mt16 mb16">Zbieram żywność w lokalnym sklepie</h3>
+                            <p class="mt16 mb16">
+                                Magda, Stowarzyszenie Monar, Warszawa
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-centered">
+                            <img class="img img-rounded img-responsive" src="/bestja_frontend_fpbz/static/src/img/pan_z_rowerem.png"/>
+                            <h3 class="mt16 mb16">Jestem grafikiem w banku w Warszawie</h3>
+                            <p class="mt16 mb16">
+                                Magda, Stowarzyszenie Monar, Warszawa
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-centered">
+                            <img class="img img-rounded img-responsive" src="/bestja_frontend_fpbz/static/src/img/dzieci_z_balonikami.png"/>
+                            <h3 class="mt16 mb16">Obsługuję wózek widłowy w magazynie</h3>
+                            <p class="mt16 mb16">
+                                McCormik
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button class="btn btn-lg text-center mt32 mb32">ZOBACZ OFERTY</button>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>-->
+    </data>
+</openerp>
