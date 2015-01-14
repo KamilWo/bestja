@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <!--<template id="fpbz_snippets_common" inherit_id="website.snippets" name="FPBZ snippets">
+        <!--<template id="fpbz_snippets_common" inherit_id="website.snippets" name="FPBZ snippets commont code">
             <xpath expr="//ul[@class='nav-tabs']" position="inside">
                 <li><a href="#snippet_fpbz" data-toggle="tab">FPBZ</a></li>
             </xpath>

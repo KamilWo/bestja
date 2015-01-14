@@ -8,8 +8,12 @@
     font-family: "Arial Regular, Arial" !important;
 }
 
-.orange_text{
+.color_orange{
     color: #FF9900;
+}
+
+.theme_description{
+    overflow: hidden;
 }
 
 /* centered columns styles */
@@ -24,7 +28,6 @@
     /* inline-block space fix */
     margin-right: -4px;
 }
-
 /* end of centered columns styles */
 
 /* Main snippet */
@@ -42,22 +45,21 @@
 .main_top_white_text h3{
     font-size: 26px;
     margin-left: 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 .main_top_white_text h2{
     font-size: 32px;
     margin-left: 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 .main_top_photo_text{
-    background: url('/bestja_frontend_fpbz/static/src/img/pan_z_talerzem.png') 
-        no-repeat; min-height: 70%;
+    background: url('/bestja_frontend_fpbz/static/src/img/content/pan_z_talerzem.jpg') 
+        no-repeat 50% 50%;
+    background-size: auto auto;
     position: relative;
     color: #FFFFFF;
+    max-width: 100%;
+    height: auto;
 }
 
 .mouse_img{
@@ -71,6 +73,7 @@
     height: 55px;
     background-color: white;
     font-size: 22px;
+    transition-duration: 2s;
 }
 
 .direction_down{
@@ -121,6 +124,10 @@
     font-size: 12px;
 }
 
+.map_of_poland_section a, .map_of_poland_section a:hover{
+    text-decoration: none;
+}
+
 ul.nav-map{
     position: relative;
     display: block;
@@ -142,6 +149,7 @@ ul.nav-map li a{
     height: auto;
     color: #4a3c31;
     position: relative;
+    text-decoration: none;
 }
 
 ul.nav-map li a .nav-map-point{
@@ -216,7 +224,7 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
 }
 
 .map_of_poland{
-    background: url('/bestja_frontend_fpbz/static/src/img/mapa_2.png') no-repeat;
+    background: url('/bestja_frontend_fpbz/static/src/img/content/mapa_2.png') no-repeat;
     width: 440px;
     height: 402px;
     margin: 0 auto!important;
@@ -277,25 +285,33 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
 /* Footer */
 #footer_icons li{
     list-style: none;
-    float: left;
     margin-left: 30px;
-}
-
-#footer_icons li a{
-    background-image: url('/bestja_frontend_fpbz/static/src/img/stopka_ikonki.png');
-    display: block;
+    text-align: left;
 }
 
 #footer_icons li a.facebook{
+    background-image: url('/bestja_frontend_fpbz/static/src/img/content/stopka_ikonki.png');
+    display: inline-block;
     background-position: 0 0;
+    background-repeat: no-repeat;
     width: 35px;
     height: 45px;
+    vertical-align: middle;
+    margin-left: 7px;
+}
+
+#footer_icons li a{
+    
 }
 
 #footer_icons li a.youtube{
+    background-image: url('/bestja_frontend_fpbz/static/src/img/content/stopka_ikonki.png');
+    display: inline-block;
     background-position: -173px 0;
+    background-repeat: no-repeat;
     width: 43px;
     height: 45px;
+    vertical-align: middle;
 }
 
 .footer_div{
@@ -321,8 +337,10 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
 }
 
 .copyrights p{
-    font-size: 12px;
+    font-size: 16px;
     padding-right: 20px;
+    padding-top: 4px;
+    vertical-align: middle;
 }
 
 .white_footer_text{
@@ -332,6 +350,17 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
 .footer_div span{
     margin-left: 12px;
     margin-right: 12px;
+}
+
+.footer_contact li{
+    list-style: none;
+    float: left;
+    padding-left: 1%; 
+    padding-right: 1%;
+}
+
+.footer_contact li, .footer_contact li a{
+    color: #FF9900;
 }
 
 @media screen and (max-width: 991px) {

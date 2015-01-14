@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <!--<template id="snippets" inherit_id="website.snippets" name="Clean Theme snippets">
-            <xpath expr="//div[@id='snippet_fpbz']" position="inside">
-                <div class="container-fluid volunteers_newsletter arial_font">
+        <template id="volunteers_newsletter_snippet" inherit_id="website.snippets" name="FPBZ snippet with volunteers newsletter features">
+            <xpath expr="//div[@id='snippet_feature']" position="inside">
+                <div>
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/bestja_frontend_fpbz/static/src/img/snippets/s_block_features_grid.png"/>
+                        <span class="oe_snippet_thumbnail_title">Newsletter</span>
+                    </div>
+                    <section class="oe_snippet_body oe_dark">
+                        <div class="container-fluid volunteers_newsletter arial_font">
                             <h1 class="text-center mt32 mb32">Biuletyn wolontariuszy</h1>
                             <div class="row mt16 mb16">
                                 <div class="col-md-3 text-center">
@@ -16,7 +22,7 @@
                                     <span class="fa fa-lock fa-5x"></span>
                                     <h3 class="mt16 mb16">Zgłoś się</h3>
                                     <div class="text-muted mt16 mb8">Zgłoszenie na ofertę<br />
-                                    to tylko chwila.</div>
+                                        to tylko chwila.</div>
                                 </div>
                                 <div class="col-md-3 text-center">
                                     <span class="fa fa-heart fa-5x"></span>
@@ -30,11 +36,13 @@
                                     <span class="fa fa-heart fa-5x"></span>
                                     <h3 class="mt16 mb16">Zaproś znajomych</h3>
                                     <div class="text-muted mt16 mb8">Zaproś znajomych <br />
-                                    i poznaj nowych.</div>
+                                        i poznaj nowych.</div>
                                 </div>
                             </div>
                         </div>
+                    </section>
+                </div>
             </xpath>
-        </template>-->
+        </template>
     </data>
 </openerp>

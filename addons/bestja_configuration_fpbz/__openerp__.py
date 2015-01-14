@@ -18,10 +18,12 @@
         'bestja_project_hierarchy',
         'bestja_offers',
         'bestja_files',
-        'email_confirmation',
         'quizzes',
         'bestja_organization_warehouse',
         'bestja_frontend_fpbz'
+    ],
+    'data': [
+        'data.xml',
     ],
     'application': True,
 }

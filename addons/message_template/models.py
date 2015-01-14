@@ -51,7 +51,7 @@ class MessageTemplate(models.Model):
         """
         group_obj = self.env.ref(group)
         self.send(
-            recipients=group_obj.users,
+            recipients=group_obj.sudo().users,
             sender=sender,
             record=record,
             record_name=record_name,
@@ -107,6 +107,13 @@ class MessageTemplateMixin(models.AbstractModel):
         Used by the messages module to reply in a thread.
         """
         return self.env['mail.thread'].message_post(*args, **kwargs)
+
+    @api.model
+    def _get_access_link(self, mail, partner):
+        """
+        Used to generate a link to the associated object in e-mail notification.
+        """
+        return self.env['mail.thread']._get_access_link(mail, partner)
 
 
 class MailMessage(models.Model):

@@ -6,31 +6,19 @@ class Project(models.Model):
     _name = 'bestja.project'
     _inherit = ['message_template.mixin']
 
-    def guess_organization(self):
-        """
-        Which organization this project belongs to.
-        For use with methods used with the `default`
-        field attributes.
-        """
-        try:
-            # try to use organization configured in the current project
-            project = self.browse([self.env.context['params']['id']])
-            organization = project.organization
-        except KeyError:
-            # most likely a new project, use organization the user coordinates
-            organization = self.env.user.coordinated_org
-        return organization
-
     def current_members(self):
         """
         Limit to members of the current organization only.
         """
-        organization = self.guess_organization()
-        return [
-            '|',  # noqa odoo-domain indent
-                ('id', 'in', organization.volunteers.ids),
-                ('coordinated_org', '=', organization.id),
-            ]
+        return """[
+            '|',
+                '&',
+                    ('organizations', '!=', False),
+                    ('organizations', '=', organization),
+                '&',
+                    ('coordinated_org', '!=', False),
+                    ('coordinated_org', '=', organization),
+            ]"""
 
     name = fields.Char(required=True, string="Nazwa")
     organization = fields.Many2one(
@@ -251,6 +239,11 @@ class UserWithProjects(models.Model):
         inverse_name='manager'
     )
 
+    def __init__(self, pool, cr):
+        super(UserWithProjects, self).__init__(pool, cr)
+        self.add_permitted_fields(level='owner', fields={'projects', 'managed_projects'})
+        self.add_permitted_fields(level='privileged', fields={'projects', 'managed_projects'})
+
     @api.one
     def sync_manager_groups(self):
         """
@@ -261,6 +254,18 @@ class UserWithProjects(models.Model):
             group=self.env.ref('bestja_project.managers'),
             domain=[('managed_projects', '!=', False)],
         )
+
+        @api.one
+        @api.depends('projects')
+        def compute_user_access_level(self):
+            """
+            Access level that the current (logged in) user has for the object.
+            Either "owner", "admin", "privileged" or None.
+            """
+            super(UserWithProjects, self).compute_user_access_level()
+            if not self.user_access_level and self.user_has_groups('bestja_project.managers') \
+                    and (self.env.user.managed_projects & self.sudo().projects):
+                self.user_access_level = 'privileged'
 
 
 class OrganizationWithProjects(models.Model):

@@ -3,8 +3,6 @@ from lxml import etree
 
 from openerp import models, fields, api, SUPERUSER_ID
 
-from openerp.addons.bestja_offers.models import Offer
-
 
 class OfferWithModeration(models.Model):
     _name = 'offer'
@@ -13,18 +11,15 @@ class OfferWithModeration(models.Model):
         'ir.needaction_mixin',
         'message_template.mixin',
     ]
-    STATES = Offer.STATES + [
-        ('pending', "oczekująca na akceptację"),
-    ]
-    state = fields.Selection(STATES)
+
+    state = fields.Selection(selection_add=[('pending', "oczekująca na akceptację")])
 
     def is_moderator(self):
         """
         Returns a boolean value indicating whether current user
         is an offer moderator.
         """
-        return self.env['res.users'] \
-            .has_group('bestja_offers_moderation.offers_moderator')
+        return self.user_has_groups('bestja_offers_moderation.offers_moderator')
 
     @api.one
     def set_pending(self):
@@ -45,6 +40,8 @@ class OfferWithModeration(models.Model):
                     recipients=self.sudo().project.responsible_user,
                     sender=self.env.user,
                 )
+        else:
+            self.set_pending()
 
     @api.one
     def set_pending_if_needed(self):

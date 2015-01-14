@@ -1,6 +1,6 @@
 {
     # Theme information
-    'name': "FPBŻ frontend",
+    'name': "FPBŻ Theme",
     'description': """
     This is a custom theme made for Federacja Polskich Banków Żywności
     """,
@@ -9,12 +9,12 @@
     'css': ['static/src/css/custom.css'],
     'depends': ['website'],
 
-    # templates, pages, and snippets
+    # assets
     'data': [
-        'views/config.xml',
+        'views/assets.xml',
         
     # pages
-        'templates/pages/header.xml',
+        'templates/pages/title.xml',
         'templates/pages/home_page.xml',
         'templates/pages/footer.xml',
         
@@ -28,7 +28,7 @@
         'templates/snippets/meet_our_volunteers.xml',
     ],
     'application': True,
-    # Your information
+    # About information
     'author': "Laboratorium EE, Kamil Woźniak",
     'website': "http://laboratorium.ee",
 }

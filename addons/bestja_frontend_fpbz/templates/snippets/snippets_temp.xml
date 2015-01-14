@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <template id="snippets" inherit_id="website.snippets" name="Clean Theme snippets">
+        <template id="fpbz_snippets" inherit_id="website.snippets" name="Clean Theme snippets">
             <xpath expr="//div[@id='snippet_structure']" position="inside">
                 <div>
                     <div class="oe_snippet_thumbnail">
-                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_title.png"/>
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/snippets/s_block_title.png"/>
                         <span class="oe_snippet_thumbnail_title">SNIP IT!</span>
                     </div>
                     <section class="oe_snippet_body fw_categories">
@@ -44,7 +44,7 @@
                 <div>
                 <!-- Add a Thumbnail in the Website Builder drop-down menu -->
                     <div class="oe_snippet_thumbnail">
-                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_title.png"/>
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/snippets/s_block_title.png"/>
                         <span class="oe_snippet_thumbnail_title">Test OPTION</span>
                     </div>
                 <!-- Your Snippet content -->
@@ -67,7 +67,7 @@
             <xpath expr="//div[@id='snippet_structure']" position="inside">
                 <div>
                     <div class="oe_snippet_thumbnail">
-                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_big_picture.png"/>
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/snippets/s_block_big_picture.png"/>
                         <span class="oe_snippet_thumbnail_title">Główne zdjęcie</span>
                     </div>
                     <section class="oe_snippet_body oe_dark mt16 mb16">
@@ -77,7 +77,7 @@
                                     <h2>A Punchy Headline</h2>
                                 </div>
                                 <div class="col-md-12">
-                                    <img class="img img-responsive" src="/bestja_frontend_fpbz/static/src/img/pan_z_talerzem.png" style="margin: 0 auto;"/>
+                                    <img class="img img-responsive" src="/bestja_frontend_fpbz/static/src/img/content/pan_z_talerzem.png" style="margin: 0 auto;"/>
                                 </div>
                                 <div class="col-md-6 col-md-offset-3 mb16 mt16">
                                     <p class="text-center">
