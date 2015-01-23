@@ -1,35 +1,16 @@
-jQuery(window).load(function(){
+jQuery(window).ready(function () {
 
-    $('button.choose_place').click(function(){
-        $('html, body').animate({
-        scrollTop: $("#map_of_poland_section").offset().top
-    }, 800);
-    });
-
-    var window_height = window.innerHeight;
-    $('main_top_photo_text').css({'height':window_height});
-        
-/* EVENT LISTENERS
-*----------------------------------------------------------------------------------------*/
-
-    if(window.attachEvent) {
-        window.attachEvent('onresize', function() {
-            sizeChange();
-        });
-    }
-    else if(window.addEventListener) {
-        window.addEventListener('resize', function() {
-            sizeChange();
-        }, true);
-    }
-    else {
-        //The browser does not support Javascript event binding
-        console.log('NO! support Javascript event binding...');
-        document.body.onresize = "sizeChange()";
-    }
+    /* Function which prepare size of Main top photo snippet and change 
+     * its height when window is resized */
+    var $window = $(window).on('resize', function () {
+        var height = $(this).height() - $("navbar-static-top").height() - 50;
+        $('.main_top_photo_text').height(height);
+    }).trigger('resize');
+    /* End of function resize */
     
-    function sizeChange(){
-        window_height = window.innerHeight;
-            $('main_top_photo_text').css({'height':window_height});
-    }
+    $('.choose_place').click(function () {
+        $('html, body').animate({
+            scrollTop: $("#map_of_poland_section").offset().top
+        }, 800);
+    });
 });

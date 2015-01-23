@@ -13,21 +13,21 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12 main_top_photo_text">
-                                    <div class="main_top_white_text open_sans_font mb64">
-                                        <h1 class="mt64 mb32">Rocznie w Polsce marnuje się 9 mln ton jedzenia</h1>
-                                        <h3 class="mt32 mb32">2,5 mln osób nie ma dostępu do pełnowartościowej żywności</h3>
-                                        <h2 class="mt32 mb32">Pomóż nam to zmienić!</h2>
+                                    <div class="mb64 main_top_white_text open_sans_condensedbold">
+                                        <h1 class="mt64 mb32 text-center">Rocznie w Polsce marnuje się <span class="differentiator_1">9 mln</span> ton jedzenia</h1>
+                                        <h1 class="text-center">
+                                            <span class="differentiator_1">2,5 mln</span> osób nie ma dostępu do pełnowartościowej żywności</h1>
+                                        <h1 class="text-center">Pomóż nam to zmienić!</h1>
                                     </div>
                                     <div class="text-center">
-                                        <button class="btn btn-default btn-lg text-center mt128 mb64 choose_place">
-                                            wybierz swoją miejscowość</button>
-                                        <br />
+                                        <h1 class="mt64 mb64 text-center text-uppercase color_orange open_sans_condensedbold choose_place">
+                                            wybierz swoją miejscowość</h1>
                                     </div>
-                                    <div class="col-md-4 col-md-offset-4 text-center centered mt128">
-                                        <img class="img mouse_img" src="/bestja_frontend_fpbz/static/src/img/content/myszka.png"/>
-                                        <br />
-                                        <span class="direction_down">&lt;</span>
-                                    </div>
+                                </div>
+                                <div class="text-center mt64 mouse_div">
+                                    <img class="img mouse_img" src="/bestja_frontend_fpbz/static/src/img/content/scroll-01.svg"/>
+                                    <br />
+                                    <span class="direction_down color_orange">&lt;</span>
                                 </div>
                             </div>
                         </div>

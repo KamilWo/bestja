@@ -6,40 +6,41 @@
                 <footer>
                     <div class="container-fluid footer_div">
                         <div class="row clearfix">
-                            <div class="col-footer text-center">
-                                <ul id="footer_icons">
+                            <div class="col-md-5 footer_logo_container">
+                                <a class="footer_logo" href="http://www.wolontariat.bankizywnosci.pl/"></a>
+                                <ul class="footer_contact">
+                                    <li class="mt8 mb8">
+                                        <a href="http://www.wolontariat.bankizywnosci.pl/">Kontakt</a>
+                                    </li>
+                                    <li class="mt8 mb8">
+                                        <a href="http://www.wolontariat.bankizywnosci.pl/">Regulamin</a>
+                                    </li>
+                                    <li class="mt8 mb8">
+                                        <a href="http://www.wolontariat.bankizywnosci.pl/">Polityka prywatności</a>
+                                    </li>
+                                    <li class="mt8 mb8">
+                                        <a href="http://www.wolontariat.bankizywnosci.pl/">O nas</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <div class="col-md-2 centered text-center" />
+                            <div class="col-md-5 mt16 footer_icons_container">
+                                <ul class="col-md-12 footer_icons">
                                     <li>
-                                        <a class="facebook" href="http://facebook.com"></a> 
-                                        <a href="http://facebook.com">Znajdź nas na Facebooku</a>
+                                        <a class="facebook" href="http://facebook.com"></a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" href="http://facebook.com"></a>
                                     </li>
                                     <li>
                                         <a class="youtube" href="http://youtube.com"></a>
-                                        <a href="http://youtube.com">Zobacz nas w akcji</a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="col-footer text-center mt16">
-                                <h4>
-                                    <ul class="footer_contact">
-                                        <li>
-                                            <a href="http://www.wolontariat.bankizywnosci.pl/">Kontakt</a>
-                                        </li>
-                                        <li>|</li>
-                                        <li>
-                                            <a href="http://www.wolontariat.bankizywnosci.pl/">Regulamin</a>
-                                        </li>
-                                        <li>|</li>
-                                        <li>
-                                            <a href="http://www.wolontariat.bankizywnosci.pl/">Polityka prywatności</a>
-                                        </li>
-                                    </ul>   
-                                </h4>
-                            </div>
-                            <div class="col-footer text-right copyrights arial_font mt16">
-                                <div>
-                                    <p class="color_orange">© 2015,<span t-field="res_company.name"/></p>
+                                <div class="copyrights">
+                                    <p>© 2015,<span t-field="res_company.name"/></p>
                                 </div>
-                            </div>
+                            </div>                            
                         </div>
                     </div>
                 </footer>

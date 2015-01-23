@@ -52,6 +52,12 @@ class Volunteer(models.Model):
         'message_template.mixin'
     ]
 
+    EMAIL_NOTIFICATIONS = [
+        ('always', 'Tak, chcę otrzymywać wszystkie powiadomienia'),
+        ('none', 'Nie chcę otrzymywać żadnych powiadomień'),
+    ]
+
+    notify_email = fields.Selection(EMAIL_NOTIFICATIONS, default='always', help=None)
     wishes = fields.Many2many(
         'volunteer.wish',
         string="zainteresowania",
@@ -152,7 +158,7 @@ class Volunteer(models.Model):
             'street_gov', 'street_number_gov', 'apt_number_gov', 'zip_code_gov',
             'city_gov', 'voivodeship_gov', 'country_gov', 'different_addresses',
             'street', 'street_number', 'apt_number', 'zip_code', 'city', 'voivodeship',
-            'country',
+            'country', 'active_state',
         },
         'owner': {  # Fields accessible to the owner (i.e. the user herself)
             'wishes', 'skills', 'languages', 'occupation', 'drivers_license', 'sanepid',
@@ -161,7 +167,7 @@ class Volunteer(models.Model):
             'street_gov', 'street_number_gov', 'apt_number_gov', 'zip_code_gov',
             'city_gov', 'voivodeship_gov', 'country_gov', 'different_addresses',
             'street', 'street_number', 'apt_number', 'zip_code', 'city', 'voivodeship',
-            'country', 'pesel', 'document_id_kind', 'document_id',
+            'country', 'pesel', 'document_id_kind', 'document_id', 'notify_email', 'active_state',
         }
     }
     # Add fields whitelisted for the owner in base.res_users
@@ -172,41 +178,38 @@ class Volunteer(models.Model):
         # this method should run only once - when the model is being registered.
         self.sync_permitted_fields()
 
-    @classmethod
-    def add_permitted_fields(cls, level, fields):
+    def add_permitted_fields(self, level, fields):
         """
         Make fields (provided as a `fields` set) accessible to users with access
         level `level` (either 'all', 'privileged' or 'owner').
         """
-        cls.permitted_fields[level] |= fields
+        self.permitted_fields[level] |= fields
         if level in ('owner', 'all'):
-            cls.sync_permitted_fields()
+            self.sync_permitted_fields()
 
-    @classmethod
-    def remove_permitted_fields(cls, level, fields):
+    def remove_permitted_fields(self, level, fields):
         """
         Mark fields (provided as a `fields` set) as no longer accessible to users
         with access level `level` (either 'all', 'privileged' or 'owner').
         """
-        cls.permitted_fields[level] -= fields
+        self.permitted_fields[level] -= fields
         if level in ('owner', 'all'):
-            cls.sync_permitted_fields()
+            self.sync_permitted_fields()
 
-    @classmethod
-    def sync_permitted_fields(cls):
+    def sync_permitted_fields(self):
         """
         Sync SELF_READABLE_FIELDS and SELF_WRITEABLE_FIELDS
         (part of rudimentary field permissions defined in base.res_users)
         with our field permission definitions.
         """
-        cls.SELF_WRITEABLE_FIELDS = list(
-            set(res_users.SELF_WRITEABLE_FIELDS) |
-            cls.permitted_fields['all'] | cls.permitted_fields['owner']
+        self.SELF_WRITEABLE_FIELDS = list(
+            set(self.SELF_WRITEABLE_FIELDS) |
+            self.permitted_fields['all'] | self.permitted_fields['owner']
         )
 
-        cls.SELF_READABLE_FIELDS = list(
-            set(res_users.SELF_READABLE_FIELDS) |
-            cls.permitted_fields['all'] | cls.permitted_fields['owner']
+        self.SELF_READABLE_FIELDS = list(
+            set(self.SELF_READABLE_FIELDS) |
+            self.permitted_fields['all'] | self.permitted_fields['owner']
         )
 
     @api.v8
@@ -223,7 +226,7 @@ class Volunteer(models.Model):
             if level == 'admin':
                 continue
             available_fields = self.permitted_fields['all'] | \
-                self.permitted_fields.get(level, {})
+                self.permitted_fields.get(level, set())
 
             for field_name in fields_dict:
                 if field_name not in available_fields:
@@ -266,6 +269,12 @@ class Volunteer(models.Model):
     #######################################
     # / Fields permissions code ends here #
     #######################################
+
+    @api.model
+    def _get_group(self):
+        # default groups
+        # A shorter list than defined in base.res_user
+        return [self.env.ref('base.group_user').id]
 
     @api.multi
     def preference_save(self):
@@ -426,3 +435,20 @@ class Volunteer(models.Model):
                 'country_gov': [('id', '=', poland.id)] if self.voivodeship_gov else []
             }
         }
+
+
+class Partner(models.Model):
+    _inherit = 'res.partner'
+
+    email = fields.Char(groups='base.group_system')  # hide email
+
+    @api.multi
+    def check_access_rule(self, operation):
+        """
+        To access a partner object one need to have access permissions
+        for the corresponding user object.
+        """
+        super(Partner, self).check_access_rule(operation)
+        related_users = self.sudo().user_ids
+        if related_users:
+            related_users.sudo(self.env.user.id).check_access_rule(operation)

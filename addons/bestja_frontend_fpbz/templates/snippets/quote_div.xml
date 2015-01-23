@@ -9,18 +9,22 @@
                         <span class="oe_snippet_thumbnail_title">Big quote</span>
                     </div>
                     
-                    <section class="oe_snippet_body oe_dark">
-                        <div class="container-fluid quote_div open_sans_font">
+                    <section class="oe_snippet_body">
+                        <div class="container-fluid quote_div">
                             <div class="row">
-                                <blockquote>
-                                    <p>
-                                        <span class="big_apostrophe">" </span>Wolontariat daje mi przede wszystkim satysfakcję z pomagania, 
-                                        a także możliwość kreatywnego działania. Poznaję nowych ludzi, 
+                                <div class="col-md-offset-1 col-md-10">
+                                    <blockquote>
+                                        <span class="big_apostrophe_before">”</span>
+                                        Wolontariat daje mi 
+                                        przede wszystkim satysfakcję z pomagania, 
+                                        a także możliwość kreatywnego działania. Poznaję nowych ludzi, 
                                         uczę się pracy w zespole i rozwijam swoje zainteresowania.
-                                        <span style="font-family: 'Arial Bold', Arial; font-weight: 700; font-style: normal; font-size: 48px;" class="" id="cache59">" </span>
-                                    </p>
-                                    <small>Ania, wolontariuszka Banku Żywności w Olsztynie</small>
-                                </blockquote>
+                                        <span class="big_apostrophe_after">„</span>
+                                    </blockquote>
+                                    <span class="podpis_pod_cytatem">
+                                        <strong>Ania,</strong> wolontariuszka Banku Żywności w Olsztynie
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </section>
