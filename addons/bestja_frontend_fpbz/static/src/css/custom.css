@@ -83,8 +83,6 @@ body{
 }
 
 .main_top_photo_text{
-    /*    background: url('/bestja_frontend_fpbz/static/src/img/content/pan_z_talerzem.jpg') 
-            no-repeat 50% 50%;*/
     background: url('http://placekitten.com/g/1920/1080') 
         no-repeat 50% 50%;
     background-size: auto auto;
@@ -200,18 +198,6 @@ body{
     display: block;
 }
 
-@media screen and (max-width: 991px) {
-
-}
-
-@media screen and (max-width: 767px) {
-
-}
-
-@media screen and (max-width: 480px) {
-
-}
-
 .why_act_with_us button{
     min-width: 290px;
     background-color: #EC8D17;
@@ -307,7 +293,7 @@ body{
     margin-bottom: -20px; 
 }
 
-.podpis_pod_cytatem{
+.description_under_quote{
     display: block;
     font-size: 26pt;
     color: #F29000;
@@ -375,6 +361,47 @@ body{
     text-align: left;
 }
 /* End of Tasks snippet*/
+
+/* Become partner top snippet */
+.become_partner h2{
+    font-size: 40pt;
+}
+
+@media screen and (max-width: 1400px) {
+    .become_partner h2{
+        font-size: 30pt;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .become_partner h2{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .become_partner h2{
+        font-size: 16pt;
+    }
+}
+
+.become_partner_link a{
+    padding-left: 15px;
+    font-size: 26pt;
+    text-decoration: none;
+}
+/* End of Become partner top snippet */
+
+/* What partner receives snippet */
+.what_partner_receives li, .advantages_of_application li{
+    font-size: 26pt;
+    list-style: none;
+}
+
+.what_partner_receives span, .advantages_of_application span{
+    margin-right: 10px;
+}
+/* End of What partner receives snippet */
 
 /* Footer */
 .footer_logo_container{

@@ -22,7 +22,6 @@
                                         <a href="http://www.wolontariat.bankizywnosci.pl/">O nas</a>
                                     </li>
                                 </ul>
-                                
                             </div>
                             <div class="col-md-2 centered text-center" />
                             <div class="col-md-5 mt16 footer_icons_container">
@@ -40,7 +39,7 @@
                                 <div class="copyrights">
                                     <p>© 2015,<span t-field="res_company.name"/></p>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
                 </footer>
