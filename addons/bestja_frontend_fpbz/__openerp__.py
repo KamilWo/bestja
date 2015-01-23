@@ -17,6 +17,7 @@
         'templates/pages/header.xml',
         'templates/pages/home_page.xml',
         'templates/pages/footer.xml',
+        'templates/pages/become_partner.xml',
         
     # snippets
         'templates/snippets/common_snippets.xml',

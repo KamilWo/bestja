@@ -232,7 +232,53 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
     text-align: right;
 }
 
+<<<<<<< HEAD
 .text-left-only-desktop{
+=======
+/* Become partner top snippet */
+.become_partner h2{
+    font-size: 40pt;
+}
+
+@media screen and (max-width: 1400px) {
+    .become_partner h2{
+        font-size: 30pt;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .become_partner h2{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .become_partner h2{
+        font-size: 16pt;
+    }
+}
+
+.become_partner_link a{
+    padding-left: 15px;
+    font-size: 26pt;
+    text-decoration: none;
+}
+/* End of Become partner top snippet */
+
+/* What partner receives snippet */
+.what_partner_receives li, .advantages_of_application li{
+    font-size: 26pt;
+    list-style: none;
+}
+
+.what_partner_receives span, .advantages_of_application span{
+    margin-right: 10px;
+}
+/* End of What partner receives snippet */
+
+/* Footer */
+.footer_logo_container{
+>>>>>>> Site about becoming a partner and its blocks
     text-align: left;
 }
 

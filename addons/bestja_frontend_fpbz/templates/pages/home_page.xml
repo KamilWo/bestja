@@ -35,10 +35,36 @@
                                     * rocznie
                                 </div>
                                 <div class="col-md-6 mt16">
-                                    <h3>Docieramy z żywnością do 1,3 <small>mln</small> osób</h3>
-                                    <h4>Rozdajemy <span>60 tys.</span> ton* żywności potrzebującym</h4>
-                                    <h4>Angażujemy przy zbiórkach żywności</h4>
-                                    <h4 class="text-center"><span>51 tys.</span> wolontariuszy*</h4>
+                                    <table class="data_of_acts">
+                                        <tr>
+                                            <td class="column_with_icons">
+                                                <img class="img img-responsive data_icons" 
+                                                     src="/bestja_frontend_fpbz/static/src/img/content/ciezarowka-01.svg" />
+                                            </td>
+                                            <td>
+                                                <h2>Docieramy z żywnością do <span class="data">1,3 mln</span> osób</h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            
+                                                <img class="img img-responsive data_icons" 
+                                                     src="/bestja_frontend_fpbz/static/src/img/content/jablko-01.svg" />
+                                            </td>
+                                            <td>
+                                                <h2>Rozdajemy rocznie <span class="data">60 tys.</span> ton żywności potrzebującym</h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="img img-responsive data_icons" 
+                                                     src="/bestja_frontend_fpbz/static/src/img/content/wolontariusze-01.svg" />
+                                            </td>
+                                            <td>  
+                                                <h2>Angażujemy rocznie przy zbiórkach żywności <span class="data">51 tys.</span> wolontariuszy</h2>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                             <div class="row">
@@ -255,11 +281,32 @@
                                 <div class="col-md-6 mt16 text-right-only-desktop">
                                     <p>Twoja organizacja chciałaby z nami współpracować?</p>
                                 </div>
+<<<<<<< HEAD
                                 <div class="col-md-6 mt16 text-left-only-desktop">
                                     <p>
                                         <a class="orange_text" href="">Dowiedz się więcej</a> lub 
                                         <a class="orange_text" href="">zostań organizacją partnerską</a>
                                     </p>
+=======
+                            </div>
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body">
+                        <div class="container-fluid quote_div">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-10">
+                                    <blockquote>
+                                        <span class="big_apostrophe_before">”</span>
+                                        Wolontariat daje mi 
+                                        przede wszystkim satysfakcję z pomagania, 
+                                        a także możliwość kreatywnego działania. Poznaję nowych ludzi, 
+                                        uczę się pracy w zespole i rozwijam swoje zainteresowania.
+                                        <span class="big_apostrophe_after">„</span>
+                                    </blockquote>
+                                    <span class="podpis_pod_cytatem">
+                                        <strong>Ania</strong>, wolontariuszka Banku Żywności w Olsztynie
+                                    </span>
+>>>>>>> Site about becoming a partner and its blocks
                                 </div>
                             </div>
                         </div>
@@ -345,6 +392,51 @@
                             </div>
                         </div>
                     </section>
+<<<<<<< HEAD
+=======
+                    <section class="oe_snippet_body mt16 mb16">
+                        <div class="container-fluid the_tasks_of_coordinator">
+                            <div class="row row-centered">
+                                <div class="col-md-1 centered nav_left">
+                                    <img src="/bestja_frontend_fpbz/static/src/img/content/poprzedni-01.svg" />
+                                </div>
+                                <div class="col-md-10 centered">
+                                    <div class="col-md-3 centered">
+                                        <div class="media_iframe_video" data-src="//www.youtube.com/embed/cnFcCyyyCWA?autoplay=0" style="">
+                                            <div class="css_editable_mode_display"> </div>
+                                            <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//www.youtube.com/embed/cnFcCyyyCWA?autoplay=0"/>
+                                        </div>
+                                        <h4 class="mt16 mb16">Zadania koordynatora w czasie organizacji zbiórki</h4>
+                                    </div>
+                                    <div class="col-md-3 centered">
+                                        <div class="media_iframe_video" data-src="//www.youtube.com/embed/BdkoPAjtMSk?autoplay=0" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                            <div class="css_editable_mode_display"> </div>
+                                            <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//www.youtube.com/embed/BdkoPAjtMSk?autoplay=0"/>
+                                        </div>
+                                        <h4 class="mt16 mb16">Cechy ważne dla koordynatora zbiórki</h4>
+                                    </div>
+                                    <div class="col-md-3 centered">
+                                        <div class="media_iframe_video" data-src="//www.youtube.com/embed/Lg1vPEswWDg?autoplay=0" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                            <div class="css_editable_mode_display"> </div>
+                                            <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//www.youtube.com/embed/Lg1vPEswWDg?autoplay=0"/>
+                                        </div>
+                                        <h4 class="mt16 mb16">Kilka kroków skutecznej rekrutacji</h4>
+                                    </div>
+                                    <div class="col-md-3 centered">
+                                        <div class="media_iframe_video" data-src="//www.youtube.com/embed/iLmK1Mg4Y5A?autoplay=0" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                            <div class="css_editable_mode_display"> </div>
+                                            <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//www.youtube.com/embed/iLmK1Mg4Y5A?autoplay=0"/>
+                                        </div>
+                                        <h4 class="mt16 mb16">Szkolenia wolontariuszy</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 centered nav_right">
+                                    <img src="/bestja_frontend_fpbz/static/src/img/content/nastepny-01.svg" />
+                                </div>
+                            </div>                            
+                        </div>
+                    </section>
+>>>>>>> Site about becoming a partner and its blocks
                 </div>
             </xpath>
         </template>
