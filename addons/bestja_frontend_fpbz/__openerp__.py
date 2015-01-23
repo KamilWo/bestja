@@ -18,6 +18,7 @@
         'templates/pages/title.xml',
         'templates/pages/home_page.xml',
         'templates/pages/footer.xml',
+        'templates/pages/become_partner.xml',
         
     # snippets
         'templates/snippets/main_top_white_text.xml',
@@ -26,7 +27,7 @@
         'templates/snippets/quote_div.xml',
         'templates/snippets/volunteers_newsletter.xml',
         'templates/snippets/meet_our_volunteers.xml',
-        'templates/snippets/get_knowledge.xml'
+        'templates/snippets/get_knowledge.xml',
     ],
     'application': True,
     # About information
