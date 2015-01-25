@@ -295,13 +295,10 @@
                         <div class="container-fluid quote_div">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
-                                    <blockquote>
-                                        <span class="big_apostrophe_before">”</span>
-                                        Wolontariat daje mi 
+                                    <blockquote>Wolontariat daje mi 
                                         przede wszystkim satysfakcję z pomagania, 
                                         a także możliwość kreatywnego działania. Poznaję nowych ludzi, 
                                         uczę się pracy w zespole i rozwijam swoje zainteresowania.
-                                        <span class="big_apostrophe_after">„</span>
                                     </blockquote>
                                     <span class="podpis_pod_cytatem">
                                         <strong>Ania</strong>, wolontariuszka Banku Żywności w Olsztynie
@@ -377,17 +374,147 @@
                                         Magda, Stowarzyszenie Monar, Warszawa
                                     </p>
                                 </div>
+<<<<<<< HEAD
                                 <div class="col-md-4 col-centered">
                                     <img class="img img-rounded img-responsive" src="/bestja_frontend_fpbz/static/src/img/dzieci_z_balonikami.png"/>
                                     <h3 class="mt16 mb16">Obsługuję wózek widłowy w magazynie</h3>
                                     <p class="mt16 mb16">
                                         McCormik
                                     </p>
+=======
+                                <div class="col-md-1 centered nav_right">
+                                    <img src="/bestja_frontend_fpbz/static/src/img/content/nastepny-01.svg" />
+                                </div>
+                            </div>                            
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body mt16 mb16">
+                        <div class="container-fluid join_us">
+                            <div class="row">
+                                <div class="text-center">
+                                    <form action="/page/become_partner">
+                                        <button class="btn btn-lg text-center mt32 mb32" type="submit">DOŁĄCZ DO NAS</button>
+                                    </form>
+>>>>>>> New sites - offers and regulations, new snippets
                                 </div>
                             </div>
                             <div class="row">
+<<<<<<< HEAD
                                 <div class="text-center">
                                     <button class="btn btn-lg text-center mt32 mb32">ZOBACZ OFERTY</button>
+=======
+                                <div class="col-md-12">
+                                    <h1 class="text-center mt48 mb48 section_title">
+                                        <strong>Biuletyn</strong> wolontariuszy</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body mt16 mb16">
+                        <div class="container-fluid meet_our_volunteers">
+                            <div class="row row-centered">
+                                <div class="col-md-1 centered nav_left">
+                                    <img src="/bestja_frontend_fpbz/static/src/img/content/poprzedni-01.svg" />
+                                </div>
+                                <div class="col-md-10 centered">
+                                    <div class="row row-centered">
+                                        <div class="col-md-3 centered">
+                                            <div class="media_iframe_video" data-src="//e.issuu.com/embed.html#15027549/10790798" 
+                                                 style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                                <div class="css_editable_mode_display"> </div>
+                                                <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//e.issuu.com/embed.html#15027549/10790798"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 centered">
+                                            <div class="media_iframe_video" data-src="//e.issuu.com/embed.html#15027549/10790829" 
+                                                 style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                                <div class="css_editable_mode_display"> </div>
+                                                <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//e.issuu.com/embed.html#15027549/10790829"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 centered">
+                                            <div class="media_iframe_video" data-src="//e.issuu.com/embed.html#15027549/10790748" 
+                                                 style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                                <div class="css_editable_mode_display"> </div>
+                                                <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//e.issuu.com/embed.html#15027549/10790748"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 centered">
+                                            <div class="media_iframe_video" data-src="//e.issuu.com/embed.html#15027549/10790847" 
+                                                 style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                                <div class="css_editable_mode_display"> </div>
+                                                <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//e.issuu.com/embed.html#15027549/10790847"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 centered nav_right">
+                                    <img src="/bestja_frontend_fpbz/static/src/img/content/nastepny-01.svg" />
+                                </div>
+                            </div>                            
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="text-center mt48 mb48 section_title">
+                                        Zdobądź wiedzę <strong>wolontariusza zbiórki</strong>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body mt16 mb16">
+                        <div class="container-fluid the_tasks_of_volunteer">
+                            <div class="row row-centered">
+                                <div class="col-md-1 centered nav_left">
+                                    <img src="/bestja_frontend_fpbz/static/src/img/content/poprzedni-01.svg" />
+                                </div>
+                                <div class="col-md-10 centered">
+                                    <div class="col-md-3 centered">
+                                        <div class="media_iframe_video" data-src="//www.youtube.com/embed/AuqxJgJTwaI?autoplay=0" style="">
+                                            <div class="css_editable_mode_display"> </div>
+                                            <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//www.youtube.com/embed/AuqxJgJTwaI?autoplay=0"/>
+                                        </div>
+                                        <h4 class="mt16 mb16">Jak działają Banki Żywności?</h4>
+                                    </div>
+                                    <div class="col-md-3 centered">
+                                        <div class="media_iframe_video" data-src="//www.youtube.com/embed/nYU9Y_R2yhI?autoplay=0" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                            <div class="css_editable_mode_display"> </div>
+                                            <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//www.youtube.com/embed/nYU9Y_R2yhI?autoplay=0"/>
+                                        </div>
+                                        <h4 class="mt16 mb16">Dlaczego warto działać na rzecz Banków Żywności?</h4>
+                                    </div>
+                                    <div class="col-md-3 centered">
+                                        <div class="media_iframe_video" data-src="//www.youtube.com/embed/IWMVrPydhVc?autoplay=0" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                            <div class="css_editable_mode_display"> </div>
+                                            <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//www.youtube.com/embed/IWMVrPydhVc?autoplay=0"/>
+                                        </div>
+                                        <h4 class="mt16 mb16">Zadania, które czekają na wolontariusza</h4>
+                                    </div>
+                                    <div class="col-md-3 centered">
+                                        <div class="media_iframe_video" data-src="//www.youtube.com/embed/Wu8pk78p4rw?autoplay=0" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+                                            <div class="css_editable_mode_display"> </div>
+                                            <iframe allowfullscreen="allowfullscreen" frameborder="0" src="//www.youtube.com/embed/Wu8pk78p4rw?autoplay=0"/>
+                                        </div>
+                                        <h4 class="mt16 mb16">Co wpływa na wyniki zbiórki?</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 centered nav_right">
+                                    <img src="/bestja_frontend_fpbz/static/src/img/content/nastepny-01.svg" />
+                                </div>
+                            </div>                            
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="text-center mt48 mb48 section_title">
+                                        Zdobądź wiedzę <strong>koordynatora zbiórki</strong>
+                                    </h1>
+>>>>>>> New sites - offers and regulations, new snippets
                                 </div>
                             </div>
                         </div>

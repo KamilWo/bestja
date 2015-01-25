@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="website.offers_list" name="Site about available offers" page="True">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="oe_snippet_body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="text-center mt48 mb48 section_title">
+                                        Oferty wolontariatu: <strong>Warszawa</strong>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body">
+                        <div class="container offer_left">
+                            <div class="row">                          
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <div class="date_of_the_offer">
+                                        <h2 class="text-muted mt0">
+                                            <small>wtorek</small>
+                                        </h2>
+                                        <h1>
+                                            <strong>02</strong>
+                                        </h1>
+                                        <h2 class="text-muted mt0">
+                                            <small>GRU</small>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <img class="img img-responsive shadow" 
+                                         src="http://placekitten.com/g/300/300"/>
+                                </div>
+                                <div class="col-md-6 mt16 content_of_the_offer">
+                                    <h2>Specjalista ds. wydarzeń specjalnych</h2>
+                                    <h2 class="text-muted mt0">
+                                        <small>Bank Żywności SOS w Warszawie</small>
+                                    </h2>
+                                    <div class="offer_where">
+                                        <p class="offer_place">Przedmieście Szczebrzeszyńskie</p> 
+                                        <p class="offer_how_long">2h</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>                            
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body">
+                        <div class="container offer_right">
+                            <div class="row">                          
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <img class="img img-responsive shadow" 
+                                         src="http://placekitten.com/g/300/300"/>
+                                </div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <div class="date_of_the_offer">
+                                        <h2 class="text-muted mt0">
+                                            <small>wtorek</small>
+                                        </h2>
+                                        <h1>
+                                            <strong>02</strong>
+                                        </h1>
+                                        <h2 class="text-muted mt0">
+                                            <small>GRU</small>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt16 content_of_the_offer">
+                                    <h2>Specjalista ds. wydarzeń specjalnych</h2>
+                                    <h2 class="text-muted mt0">
+                                        <small>Bank Żywności SOS w Warszawie</small>
+                                    </h2>
+                                    <div class="offer_where">
+                                        <p class="offer_place">Przedmieście Szczebrzeszyńskie</p> 
+                                        <p class="offer_how_long">2h</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>                            
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body">
+                        <div class="container offer_left">
+                            <div class="row">                          
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <div class="date_of_the_offer">
+                                        <h2 class="text-muted mt0">
+                                            <small>poniedziałek</small>
+                                        </h2>
+                                        <h1>
+                                            <strong>01</strong>
+                                        </h1>
+                                        <h2 class="text-muted mt0">
+                                            <small>GRU</small>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <img class="img img-responsive shadow" 
+                                         src="http://placekitten.com/g/300/300"/>
+                                </div>
+                                <div class="col-md-6 mt16 content_of_the_offer">
+                                    <h2>Specjalista ds. wydarzeń specjalnych</h2>
+                                    <h2 class="text-muted mt0">
+                                        <small>Bank Żywności SOS w Warszawie</small>
+                                    </h2>
+                                    <div class="offer_where">
+                                        <p class="offer_place">Przedmieście Szczebrzeszyńskie</p> 
+                                        <p class="offer_how_long">2h</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>                            
+                        </div>
+                    </section>
+                    <section class="oe_snippet_body">
+                        <div class="container offer_right">
+                            <div class="row">                          
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <img class="img img-responsive shadow" 
+                                         src="http://placekitten.com/g/300/300"/>
+                                </div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <div class="date_of_the_offer">
+                                        <h2 class="text-muted mt0">
+                                            <small>poniedziałek</small>
+                                        </h2>
+                                        <h1>
+                                            <strong>01</strong>
+                                        </h1>
+                                        <h2 class="text-muted mt0">
+                                            <small>GRU</small>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt16 content_of_the_offer">
+                                    <h2>Specjalista ds. wydarzeń specjalnych</h2>
+                                    <h2 class="text-muted mt0">
+                                        <small>Bank Żywności SOS w Warszawie</small>
+                                    </h2>
+                                    <div class="offer_where">
+                                        <p class="offer_place">Przedmieście Szczebrzeszyńskie</p> 
+                                        <p class="offer_how_long">2h</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>                            
+                        </div>
+                    </section>
+                </div>
+            </t>
+        </template>
+        <record id="offers_list_menu" model="website.menu">
+            <field name="name">Lista ofert</field>
+            <field name="url">/page/offers_list</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">21</field>
+        </record>
+    </data>
+</openerp>

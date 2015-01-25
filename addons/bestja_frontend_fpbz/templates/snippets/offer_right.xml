@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="offer_right" inherit_id="website.snippets" name="FPBZ snippet presents Offer with date on the right side">
+            <xpath expr="//div[@id='snippet_content']" position="inside">
+                <div>
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/bestja_frontend_fpbz/static/src/img/snippets/s_block_image_text.png"/>
+                        <span class="oe_snippet_thumbnail_title">Offer Right</span>
+                    </div>
+                    
+                    <section class="oe_snippet_body">
+                        <div class="container offer_right">
+                            <div class="row">                          
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <img class="img img-responsive shadow" 
+                                         src="http://placekitten.com/g/300/300"/>
+                                </div>
+                                <div class="col-md-2 mt16 text-center">
+                                    <div class="date_of_the_offer">
+                                        <h2 class="text-muted mt0">
+                                            <small>wtorek</small>
+                                        </h2>
+                                        <h1>
+                                            <strong>02</strong>
+                                        </h1>
+                                        <h2 class="text-muted mt0">
+                                            <small>GRU</small>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt16 content_of_the_offer">
+                                    <h2>Specjalista ds. wydarzeń specjalnych</h2>
+                                    <h2 class="text-muted mt0">
+                                        <small>Bank Żywności SOS w Warszawie</small>
+                                    </h2>
+                                    <div class="offer_where">
+                                        <p class="offer_place">Przedmieście Szczebrzeszyńskie</p> 
+                                        <p class="offer_how_long">2h</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>                            
+                        </div>
+                    </section>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</openerp>

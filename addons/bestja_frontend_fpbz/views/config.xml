@@ -4,6 +4,11 @@
         <template id="assets_frontend" name="bestja_frontend_fpbz assets" inherit_id="website.assets_frontend">
             <xpath expr="." position="inside">
                 <link rel="stylesheet" href="/bestja_frontend_fpbz/static/src/css/custom.css"/>
+<<<<<<< HEAD:addons/bestja_frontend_fpbz/views/config.xml
+=======
+                <link rel="stylesheet" href="/bestja_frontend_fpbz/static/src/css/footer.css"/>
+                <script type="text/javascript" src="/bestja_frontend_fpbz/static/src/js/custom.js"></script>
+>>>>>>> New sites - offers and regulations, new snippets:addons/bestja_frontend_fpbz/views/assets.xml
             </xpath>
         </template>
     </data>

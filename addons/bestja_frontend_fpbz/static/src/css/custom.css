@@ -1,5 +1,7 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,500,300italic,700&subset=latin,latin-ext);
 
+<<<<<<< HEAD
 .open_sans_font{
     font-family: "Open Sans" !important;
 }
@@ -13,6 +15,61 @@
 }
 
 /* centered columns styles */
+=======
+/* Common css */
+#wrap, section{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.open_sans_condensedbold{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+
+h1, .h1{
+    font-size: 48px;
+}
+
+h2, .h2{
+    font-size: 40px;
+}
+
+h3, .h3{
+    font-size: 32px;
+}
+
+h4, .h4{
+    font-size: 23.5px;
+}
+
+h5, .h5{
+    font-size: 20px;
+}
+
+h6, .h6{
+    font-size: 17px;
+}
+/* Navbar font modification */
+
+.navbar-static-top{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20pt;
+}
+
+.dropdown-menu > li > a{
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+/* End of Navbar font modification */
+/* End of Common css */
+.color_orange{
+    color: #F29000;
+}
+
+/* Centered columns styles */
+>>>>>>> New sites - offers and regulations, new snippets
 .row-centered {
     text-align: center;
 }
@@ -36,6 +93,7 @@
 }
 
 .main_top_white_text h1{
+<<<<<<< HEAD
     font-size: 48px;
 }
 
@@ -56,6 +114,58 @@
 .main_top_photo_text{
     background: url('/bestja_frontend_fpbz/static/src/img/pan_z_talerzem.png') 
         no-repeat; min-height: 70%;
+=======
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+.differentiator_1{
+    font-size: 46pt;
+}
+
+@media screen and (max-width: 991px) {
+    .main_top_white_text{
+        margin-top: 0;
+    }
+
+    .main_top_white_text h1, .choose_place{
+        font-size: 26pt;
+    }
+
+    .differentiator_1{
+        font-size: 36pt;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main_top_white_text h1, .choose_place{
+        font-size: 22pt;
+    }
+
+    .differentiator_1{
+        font-size: 26pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mouse_div{
+        display: none;
+    }
+
+    .main_top_white_text h1, .choose_place{
+        font-size: 20pt;
+    }
+
+    .differentiator_1{
+        font-size: 22pt;
+    }
+}
+
+.main_top_photo_text{
+    background: url('http://placekitten.com/g/1920/1080') 
+        no-repeat 50% 50%;
+    background-size: auto auto;
+>>>>>>> New sites - offers and regulations, new snippets
     position: relative;
     color: #FFFFFF;
 }
@@ -154,6 +264,7 @@ ul.nav-map li a .nav-map-point{
 ul.nav-map li a .nav-map-point.nav-map-point-dot{
     border-radius: 50%;
 }
+<<<<<<< HEAD
 
 ul.nav-map li a .nav-map-point.nav-map-point-triangle{
     width: 0;
@@ -172,6 +283,24 @@ ul.nav-map li a .nav-map-point-label{
 
 ul.nav-map li a.suwalki .nav-map-point-label,ul.nav-map li a.bialystok .nav-map-point-label{
     margin-right: 3px;
+=======
+.quote_div blockquote:before{
+    content: "„";
+    font-weight: 700; 
+    font-style: normal; 
+    font-size: 80pt;
+    color: #F29000;
+    line-height: 50px;
+}
+
+.quote_div blockquote:after{
+    content: "”";
+    font-weight: 700; 
+    font-style: normal; 
+    font-size: 80pt;
+    color: #F29000;
+    line-height: 50px;
+>>>>>>> New sites - offers and regulations, new snippets
 }
 
 ul.nav-map li a.suwalki .nav-map-point-label,ul.nav-map li a.chojnice 
@@ -276,6 +405,7 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
 }
 /* End of What partner receives snippet */
 
+<<<<<<< HEAD
 /* Footer */
 .footer_logo_container{
 >>>>>>> Site about becoming a partner and its blocks
@@ -301,9 +431,23 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
     font-weight: 700; 
     font-style: normal; 
     font-size: 48px;
+=======
+/* Offers snippet */
+.date_of_the_offer{
+    background-color: #EEEEEE;
+}
+
+.content_of_the_offer{
+    background-color: #EEC385;
+}
+
+.offer_where{
+    text-align: right;
+>>>>>>> New sites - offers and regulations, new snippets
 }
 /* End of snippet: a big quote */
 
+<<<<<<< HEAD
 /* Snippet: volunteers newsletter */
 .volunteers_newsletter{
     
@@ -317,9 +461,14 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
     background-color: #EC8D17;
     color: #FFFFFF;
     font-size: 20px;
+=======
+.offer_how_long, .offer_place{
+    display: inline-block;
+>>>>>>> New sites - offers and regulations, new snippets
 }
 /* End of snippet: volunteeres pictures */
 
+<<<<<<< HEAD
 /* Footer */
 #footer_icons li{
     list-style: none;
@@ -348,18 +497,43 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
     background-color: #000000;
     min-height: 100px;
     padding-top: 25px;
-}
-
-.footer_div a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.footer_div h4 a{
+=======
+.offer_place:before, .offer_how_long:before{
+    float: left;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
+.offer_place:before{
+    background: url('/bestja_frontend_fpbz/static/src/img/content/miejsce-01.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.offer_how_long:before{
+    background: url('/bestja_frontend_fpbz/static/src/img/content/czas-01.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+
+>>>>>>> New sites - offers and regulations, new snippets
+}
+/* End of Offers snippet */
+
+/* Regulations site */
+.regulations p{
+    font-size: 30px;
+    text-indent: 30px;
+}
+
+.regulations_nav{
+    position: fixed;
+}
+
+<<<<<<< HEAD
 .col-footer{
     width:33.3%;
     min-width: 290px;
@@ -390,17 +564,34 @@ ul.nav-map li a:hover .nav-map-point.nav-map-point-triangle{
 
     .copyrights{
         text-align: center;
+=======
+.regulations_nav li{
+    float: none;
+}
+
+@media screen and (max-width: 991px) {
+    .regulations_nav{
+        position: relative;
+    }
+    .regulations_nav li, .regulations_nav li + li{
+        float: left;
+        margin-top: 8px;
+>>>>>>> New sites - offers and regulations, new snippets
     }
 
-    .copyrights p{
-        padding-right: 0;
+    .regulations_nav > li > a{
+        display: inline-block;
     }
 
     #footer_icons{
         margin-left: 20px;
     }
 }
+<<<<<<< HEAD
 /* End of footer */
 
 
 
+=======
+/* End of Regulations site */
+>>>>>>> New sites - offers and regulations, new snippets
