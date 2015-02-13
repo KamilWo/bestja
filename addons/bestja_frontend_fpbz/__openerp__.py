@@ -19,7 +19,6 @@
         'templates/pages/footer.xml',
         
     # snippets
-        
     ],
     'application': True,
     # Your information

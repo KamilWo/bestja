@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--<template id="snippets" inherit_id="website.snippets" name="Clean Theme snippets">
+            <xpath expr="//div[@id='snippet_fpbz']" position="inside">
+                <div>
+                    <section class="oe_snippet_body oe_dark mt16 mb16">
+                         <div class="container-fluid why_is_it_worth open_sans_font">
+                            <div class="row clearfix">
+                                <h1 class="text-center mt32 mb48 why_it_is_worth">Dlaczego warto z nami działać</h1>
+                                <div class="col-md-6 mt16">
+                                    <img class="img img-responsive shadow mb16" 
+                                         src="/bestja_frontend_fpbz/static/src/img/dlaczego_warto_dzialac.png"/>
+                                    * rocznie
+                                </div>
+                                <div class="col-md-6 mt16">
+                                    <h3>Docieramy z żywnością do 1,3 <small>mln</small> osób</h3>
+                                    <h4>Rozdajemy <span>60 tys.</span> ton* żywności potrzebującym</h4>
+                                    <h4>Angażujemy przy zbiórkach żywności</h4>
+                                    <h4 class="text-center"><span>51 tys.</span> wolontariuszy*</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="text-center">
+                                    <button class="btn btn-lg text-center mt32 mb32">ZOBACZ OFERTY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </xpath>
+        </template>-->
+    </data>
+</openerp>
