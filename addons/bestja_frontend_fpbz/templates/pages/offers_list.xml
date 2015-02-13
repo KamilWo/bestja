@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="website.offers_list" name="Site about available offers" page="True">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="oe_snippet_body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="text-center mt48 mb48 section_title">
+                                        Oferty wolontariatu: <strong>Warszawa</strong>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </section>                    
+                    <section class="oe_sinppet_body container">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 hidden-xs ">
+                                <div class="well well-lg text-center date_of_the_offer">                                    
+                                    <p class="offers_day_of_the_week">wtorek</p>                                        
+                                    <p class="offers_the_day">
+                                        <strong>02</strong>
+                                    </p>                                        
+                                    <p class="offers_the_month">GRU</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 visible-lg-block">
+                                <img class="img img-responsive shadow" 
+                                     src="http://lorempixel.com/g/300/200"/>
+                            </div>
+                            <div class="col-sm-9 col-lg-6">
+                                <div class="well well-lg content_of_the_offer">
+                                    <h2 class="title_of_the_offer" >
+                                        <a href="/offer/dni-sera-1">Specjalista ds. wydarzeń specjalnych</a>
+                                    </h2>
+                                    <h2 class="organization_name">
+                                        <small>
+                                            <a href="/offer/dni-sera-1">Bank Żywności SOS w Warszawie</a>
+                                        </small>
+                                    </h2>
+                                    <div class="offer_where">
+                                        <p class="offer_place">Przedmieście Szczebrzeszyńskie</p> 
+                                        <p class="offer_how_long">2h</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="oe_sinppet_body container">
+                        <div class="row">
+                            <div class="col-xs-3 visible-lg-block">
+                                <img class="img img-responsive shadow" src="http://lorempixel.com/g/300/200"/>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 hidden-xs">
+                                <div class="well well-lg text-center date_of_the_offer">                                    
+                                    <p class="offers_day_of_the_week">wtorek</p>                                        
+                                    <p class="offers_the_day">
+                                        <strong>02</strong>
+                                    </p>                                        
+                                    <p class="offers_the_month">GRU</p>
+                                </div>
+                            </div>                            
+                            <div class="col-sm-9 col-lg-6">
+                                <div class="well well-lg content_of_the_offer">
+                                    <h2 class="title_of_the_offer">
+                                        <a href="/offer/dni-sera-1">Specjalista ds. wydarzeń specjalnych</a>
+                                    </h2>
+                                    <h2 class="organization_name">
+                                        <small>
+                                            <a href="/offer/dni-sera-1">Bank Żywności SOS w Warszawie</a>
+                                        </small>
+                                    </h2>
+                                    <div class="offer_where">
+                                        <p class="offer_place">Przedmieście Szczebrzeszyńskie</p> 
+                                        <p class="offer_how_long">2h</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>                                        
+                </div>
+            </t>
+        </template>
+    </data>
+</openerp>

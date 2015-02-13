@@ -1,0 +1,677 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400&subset=latin,latin-ext);
+
+/* Common css */
+#wrap, section{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.open_sans_bold{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+section .container-fluid{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+@media screen and (max-width: 991px) {
+    section .container-fluid{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+section .top-section-container{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1, .h1{
+    font-size: 36px;
+}
+
+h2, .h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3, .h3{
+    font-size: 20px;
+}
+
+h4, .h4{
+    font-size: 18px;
+}
+
+h5, .h5{
+    font-size: 16px;
+}
+
+h6, .h6{
+    font-size: 14px;
+}
+/* Navbar font modification */
+
+.navbar-static-top{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.dropdown-menu > li > a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* End of Navbar font modification */
+/* End of Common css */
+.color_orange{
+    color: #F29000;
+}
+
+/* Centered columns styles */
+.row-centered {
+    text-align: center;
+}
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+/* End of Centered columns styles */
+/* End of Common css */
+
+/* FPBZ Theme module description */
+.theme_description{
+    overflow: hidden;
+}
+/* End of FPBZ Theme module description */
+
+/* Main top snippet */
+.main_top_white_text{
+    color: white;
+    font-style: normal;
+    margin-top: 95px;
+}
+
+.main_top_white_text h1{
+    font-size: 36px;    
+}
+
+.differentiator_1{
+    font-size: 46px;
+}
+
+.choose_place{
+    border: 1px solid #F29000;
+    display: inline-block;
+    padding: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .main_top_white_text{
+        margin-top: 0;
+    }
+
+    .main_top_white_text h1, .choose_place{
+        font-size: 26px;
+    }
+
+    .differentiator_1{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main_top_white_text h1, .choose_place{
+        font-size: 22px;
+    }
+
+    .differentiator_1{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .arrow_div{
+        display: none;
+    }
+
+    .main_top_white_text h1, .choose_place{
+        font-size: 20px;
+    }
+
+    .differentiator_1{
+        font-size: 22px;
+    }
+}
+
+.main_top_photo_text{
+    background: url('http://lorempixel.com/g/1920/1080') 
+        no-repeat 50% 50%;
+    background-size: auto auto;
+    position: relative;
+    color: #FFFFFF;
+    max-width: 100%;
+}
+
+.arrow_img{
+    width: 5%;
+    margin-left: 4px;
+}
+
+.arrow_div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.choose_place:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.direction_down{
+    display: inline-block;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    font-size: 36pt;
+    font-weight: 700;
+    text-align: center;
+}
+/* End of main top snippet */
+
+/* Section title snippet */
+.section_title{
+    color: #777777;
+}
+
+@media screen and (max-width: 991px) {
+    .section_title{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section_title{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section_title{
+        font-size: 22px;
+    }
+}
+/* End of Section title snippet */
+
+/* Section Join Us */
+.join_us button{
+    min-width: 350px;
+    background-color: #3c4049;
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 700;
+    border-radius: 80px 80px 80px 80px;
+    -moz-border-radius: 80px 80px 80px 80px;
+    -webkit-border-radius: 80px 80px 80px 80px;
+    padding-left: 130px; 
+    padding-right: 130px;
+}
+
+.join_us button:hover{
+    background-color: #db901f;
+    color: #3c4049;
+}
+/* End of Section Join Us */
+
+/* Carousel navigation buttons */
+.nav_left, .nav_right{
+    float: left;
+    text-indent: -9999px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 80px 2px 0 0;
+}
+.nav_left{
+    background: url("/bestja_frontend_fpbz/static/src/img/content/poprzedni-01.svg") no-repeat scroll left top transparent;
+}
+
+.nav_right{
+    background: url("/bestja_frontend_fpbz/static/src/img/content/nastepny-01.svg") no-repeat scroll left top transparent;
+}
+/* End of Carousel navigation buttons */
+
+/* Snippet: Why is it worth to act with us */
+.data_of_acts h2{
+    font-weight: 300;
+}
+
+.why_act_with_us span{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.data_icons{
+    float: left;
+    width: 60%;
+    height: 60%;
+    margin: 30px;
+    margin-right: 70px;
+    display: block;
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+.why_act_with_us button{
+    min-width: 290px;
+    background-color: #EC8D17;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+/* End of snippet: Why is it worht to act with us */
+
+/* Snippet: Map with cities with places where we can help */
+text:hover{
+    color: #db901f;
+}
+.map_of_poland_section{
+    margin-bottom: 40px;
+}
+
+.map_of_poland_section a, .map_of_poland_section a:hover{
+    text-decoration: none;
+}
+
+.map_of_poland_container{
+    text-align: right;
+}
+
+.description_of_map_container{
+    position: relative;
+    height: 550px;
+    margin-left: 30px;
+}
+
+.description_of_map_container div{
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.description_of_map_container p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 991px) {
+    .map_of_poland_container{
+        text-align: center;
+    }
+
+    .description_of_map_container{
+        text-align: center;
+        margin-left: 30px;
+        height: 100%;
+    }
+
+    .description_of_map_container div{
+        text-align: center;
+        position: relative;
+    }
+}
+
+.map_object{
+    max-width: 600px;    
+}
+/* End of snippet: Map with cities with places where we can help */
+
+/* Snippet: a big quote */
+.quote_div blockquote{
+    font-size: 24px;
+    font-style: italic;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    height: 100%;
+    border: 0;
+    margin: 0 auto;
+}
+.quote_div blockquote:before{
+    content: "„";
+    font-weight: 700; 
+    font-style: normal; 
+    font-size: 50pt;
+    color: #F29000;
+    line-height: 50px;
+}
+
+.quote_div blockquote:after{
+    content: "”";
+    font-weight: 700; 
+    font-style: normal; 
+    font-size: 50pt;
+    color: #F29000;
+    line-height: 50px;
+}
+
+.podpis_pod_cytatem{
+    display: block;
+    font-size: 24px;
+    color: #F29000;
+    margin-left: 23px;
+}
+/* End of snippet: a big quote */
+
+/* Snippet: volunteers newsletter */
+.recrutation_step_number{
+    display: block;
+    width: 70px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #777777;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border: 2px solid #777777;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+    .recrutation_step_number{
+        margin-top: 40px;
+    }
+}
+
+.volunteers_newsletter h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.volunteers_newsletter p{
+    font-size: 18px;
+    color: #777777;
+}
+/* End of snippet: volunteers newsletter */
+
+
+/* Snippet: volunteeres pictures */
+.meet_our_volunteers h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #F29000;
+    text-align: left;
+}
+
+.meet_our_volunteers p{
+    font-size: 18px;
+    text-align: left;
+    color: #777777;
+}
+
+#viewport{
+    width: 1000px;
+    height: 450px;
+    overflow: hidden;
+}
+
+#viewport ul{
+    position: relative;
+    width: 2000px;
+}
+
+#viewport li{
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 300px;
+    height: 420px;
+    float: left;
+    list-style: none;
+}
+/* End of snippet: volunteeres pictures */
+
+/* Tasks snippet*/
+.the_tasks_of_coordinator div, .the_tasks_of_volunteer div{
+    vertical-align: top;
+}
+
+.the_tasks_of_coordinator h4, .the_tasks_of_volunteer h4{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+/* End of Tasks snippet*/
+
+/* Become partner top snippet */
+@media screen and (max-width: 992px) {
+    .become_partner h2{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .become_partner h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .become_partner h2{
+        font-size: 16px;
+    }
+}
+
+.become_partner_link a{
+    padding-left: 15px;
+    font-size: 26pt;
+    text-decoration: none;
+}
+/* End of Become partner top snippet */
+
+/* What partner receives snippet */
+.what_partner_receives li, .advantages_of_application li{
+    font-size: 24px;
+    list-style: none;
+}
+
+.what_partner_receives span, .advantages_of_application span{
+    margin-right: 10px;
+}
+/* End of What partner receives snippet */
+
+/* Offers snippet */
+.date_of_the_offer, .content_of_the_offer{
+    background-color: #F0F0F0;
+    height: 175px;
+}
+
+.offer_where{
+    padding: 25px;
+}
+
+.offers_day_of_the_week{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.offers_the_day{
+    font-size: 40px;
+    color: #3C4049;
+    margin-top: calc(23% - 40px);
+    margin-bottom: calc(23% - 40px);
+}
+
+.offers_the_month{
+    font-size: 16px;
+    color: #3C4049;
+    margin-top: calc(23% - 16px);
+    margin-bottom: calc(23% - 16px);
+}
+
+.date_of_the_offer p{
+    margin-top: calc(15% - 26px);
+    margin-bottom: calc(15% - 26px);
+}
+
+.title_of_the_offer a{
+    color: #DB901F;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.title_of_the_offer a:hover{
+    color: #F9A426;
+}
+
+.organization_name a{
+    color: #6C6C6C;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.organization_name a:hover{
+    color: #3C4049;
+}
+
+.offer_where{
+    text-align: right;
+    color: #3C4049;
+    font-size: 14px;
+}
+
+.offer_how_long, .offer_place{
+    display: inline-block;
+    color: #3C4049;
+}
+
+.offer_place:before, .offer_how_long:before{
+    float: left;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.offer_place:before{
+    background: url('/bestja_frontend_fpbz/static/src/img/content/miejsce-01.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.offer_how_long:before{
+    background: url('/bestja_frontend_fpbz/static/src/img/content/czas-01.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width: 1199px) {
+    .date_of_the_offer, .content_of_the_offer{
+        height: 200px;
+    }
+
+    .offer_where{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .date_of_the_offer, .content_of_the_offer{
+        height: 150px;
+    }
+
+    .content_of_the_offer h2{
+        margin-top: 10px;
+    }
+
+    .offer_where{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .date_of_the_offer, .content_of_the_offer{
+        height: 200px;
+    }    
+}
+
+@media screen and (max-width: 480px) {
+    .title_of_the_offer a{
+        font-size: 18px;
+    }
+
+    .organization_name a, .offer_where p{
+        font-size: 14px;
+    }
+    
+    .offer_where{
+        padding: 0;
+    }
+    
+    .offer_place, .offer_how_long{        
+        float: left;
+        text-align: left;
+    }
+    
+    .offer_place{
+        width: 70%;
+    }
+    
+    .offer_how_long{
+        width: 30%;
+    }
+}
+/* End of Offers snippet */
+
+/* Regulations site */
+.regulations p{
+    font-size: 20px;
+    text-indent: 26px;
+}
+
+.regulations_nav{
+    position: fixed;
+}
+
+.regulations_nav li{
+    float: none;
+}
+
+@media screen and (max-width: 991px) {
+    .regulations_nav{
+        position: relative;
+    }
+    .regulations_nav li, .regulations_nav li + li{
+        float: left;
+        margin-top: 8px;
+    }
+
+    .regulations_nav > li > a{
+        display: inline-block;
+    }
+}
+/* End of Regulations site */
