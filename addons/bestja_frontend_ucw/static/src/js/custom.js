@@ -7,6 +7,16 @@ jQuery(window).ready(function () {
         } else {
             $('.carousel').height(height);
         }
-    });    
-    /* End of function resize */    
+    });
+    /* End of function resize */
+
+    $(".category_link").hover(function () {
+        $('img', this).attr("src", function (index, attr) {
+            return attr.replace("off", "on");
+        });
+    }, function () {
+        $('img', this).attr("src", function (index, attr) {
+            return attr.replace("on", "off");
+        });
+    });
 });
