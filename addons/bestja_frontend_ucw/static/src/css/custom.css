@@ -21,6 +21,52 @@ a:hover, a:focus{
     text-decoration: none;
 }
 
+.field-join-info h4{
+    font-size: 14px;
+    color: #737373;
+}
+
+.field-join-info .info_sign_register{
+    font-size: 13px;
+}
+
+#info_sign_register_message{
+    display: none;
+    padding: 4px 8px;
+    width: 300px;
+    margin-top: 16px;
+    position: absolute;
+    left: calc(50% - 240px);
+    color: #333;
+    z-index: 20;
+    line-height: 1.2em;
+    text-align: left;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 4px #222;
+    -webkit-box-shadow: 0px 0px 4px #222;
+    box-shadow: 0px 0px 4px #222;
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+    word-spacing: -5px;
+}
+.info_sign_register:hover #info_sign_register_message{
+    display: block;
+}
+
+.field-regulations-privacy_policy a{
+    color: #428BCA;
+}
+
+.field-join-info span:hover, .field-regulations-privacy_policy a:hover{
+    color: #982582;
+}
+
 .button_orange, .button_more_contrast{
     background-color: #F59A1E;
     color: #FFFFFF;

@@ -10,8 +10,26 @@ jQuery(window).ready(function () {
     });
     /* End of function resize */
 
-        setInterval(function(){
-        $("#down_arrow_scroll").animate({'margin-bottom':'-10px'},1000);
-        $("#down_arrow_scroll").animate({'margin-bottom':'10px'},1000);
-        },1400);
+    setInterval(function () {
+        $("#down_arrow_scroll").animate({'margin-bottom': '-10px'}, 1000);
+        $("#down_arrow_scroll").animate({'margin-bottom': '10px'}, 1000);
+    }, 1400);
+
+    /* Smoth scrolling */
+
+    $(function () {
+        $('a[href*=#]:not([href=#])').click(function () {
+            $('html,body').stop();
+            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 500);
+                    return false;
+                }
+            }
+        });
+    });
 });
