@@ -7,6 +7,6 @@ jQuery(window).ready(function () {
         } else {
             $('.carousel').height(height);
         }
-    });    
-    /* End of function resize */    
+    });
+    /* End of function resize */
 });

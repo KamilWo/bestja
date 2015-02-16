@@ -2,9 +2,30 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic&subset=latin,latin-ext);
 
 /* Common css */
+/* Top menu changes */
 #top_menu li:first-child{
     display: none;
 }
+
+#top_menu li.active > a, #top_menu li > a:focus{
+    background-color: #982582;
+    color: #FFFFFF;
+}
+/* End of top menu changes */
+
+/* Blog customization*/
+#main_column h4{
+    font-size: 18px;
+}
+
+div[name="blog_post_data"]{
+    font-size: 12px;
+}
+
+div[name="blog_post_data"] .post-meta{
+    top: -17px;
+}
+/* End of blog customization*/
 
 #wrap, section{
     font-family: 'Ubuntu', sans-serif;
@@ -148,13 +169,13 @@ h4, .h4{
 
 .carousel_title h1{
     text-align: center;
-    line-height: 1.4em;  
+    line-height: 1.4em;
     color: #FFFFFF;
     position: absolute;
-    top: 40%;  
-    left: 0;  
-    right: 0;  
-    bottom: 0;  
+    top: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .carousel_title a, .carousel_title a:hover, .carousel-caption a, .carousel-caption a:hover{
@@ -229,7 +250,7 @@ div.carousel .carousel-indicators .active {
 }
 
 .carry_out_section{
-    background: #982582 url('http://bestja.d3.laboratorium.ee/img/1920/stronaglowna2.jpg') no-repeat 50% 100%; 
+    background: #982582 url('http://bestja.d3.laboratorium.ee/img/1920/stronaglowna2.jpg') no-repeat 50% 100%;
     color: #FFFFFF;
 }
 
@@ -247,13 +268,13 @@ div.carousel .carousel-indicators .active {
 }
 
 @media screen and (max-width: 991px) {
-    .what_to_do p{    
-        left: 90px;    
+    .what_to_do p{
+        left: 90px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .what_to_do p{    
+    .what_to_do p{
         left: 70px;
     }
 }
@@ -403,7 +424,7 @@ div.carousel .carousel-indicators .active {
     .quote_picture_on_right, .quote_picture_on_left{
         height: auto;
     }
-    
+
     .quote_picture_on_right p, .quote_picture_on_left p{
         position: relative;
         right: auto;
