@@ -4,7 +4,7 @@
         <template id="new_home_page" inherit_id="website.homepage" name="Homepage">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div id="wrap" class="oe_structure oe_empty">
-                    
+
                     <section>
                         <div class="container-fluid">
                             <div class="row">
@@ -18,7 +18,8 @@
                                             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                                             <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                                         </ol>
-                                        
+                                        <span id="down_arrow_scroll"/>
+
                                         <!-- Wrapper for slides -->
                                         <div class="carousel-inner oe_snippet_body" role="listbox">
                                             <div class="item active" style="background: url('http://lorempixel.com/g/1920/1080') 50% 0% no-repeat;">
@@ -27,11 +28,12 @@
                                                 </div>
                                                 <div class="carousel_title">
                                                     <h1>
-                                                        <a href="#choose_what_to_do">Use your professional skills to make a difference1</a>
+                                                        <a href="#choose_what_to_do">Use your professional skills <br />
+                                                        to make a difference2</a>
                                                     </h1>
                                                 </div>
                                             </div>
-                                            <div class="item" style="background: url('http://lorempixel.com/g/1920/1080') 50% 0% no-repeat;">                                                
+                                            <div class="item" style="background: url('http://lorempixel.com/g/1920/1080') 50% 0% no-repeat;">
                                                 <div class="carousel-caption">
                                                     <a href="/">Zimowa wałówka! Zbiórka karmy na UW!</a>
                                                 </div>
@@ -89,7 +91,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <script>
                             // Background picture will fit viewport
@@ -100,7 +102,7 @@
                             } else {
                                 document.getElementsByClassName('carousel')[0].style.height = height + "px";
                             }
-                            
+
                         </script>
                     </section>
                     <section class="oe_snippet_body">
@@ -119,33 +121,33 @@
                                 <div class="col-md-3 col-sm-6 col-xs-6">
                                     <a href="/offers/category/edukacyjny">
                                         <p>chcę dzielić się wiedzą</p>
-                                        <img id="category1" class="img img-responsive shadow mb16" 
+                                        <img id="category1" class="img img-responsive shadow mb16"
                                              src="http://bestja.d3.laboratorium.ee/img/chcewiedziecwiecej_off.jpg"/>
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6">
                                     <a href="/offers/category/akcyjny">
                                         <p>chcę działać</p>
-                                        <img id="category2" class="img img-responsive shadow mb16" 
+                                        <img id="category2" class="img img-responsive shadow mb16"
                                              src="http://bestja.d3.laboratorium.ee/img/chcedzialac_off.jpg"/>
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6">
                                     <a href="/offers/category/pomocowy">
                                         <p>chcę pomagać</p>
-                                        <img id="category3" class="img img-responsive shadow mb16 pict3" 
-                                             src="http://bestja.d3.laboratorium.ee/img/chcepomagac_off.jpg"/>                                        
+                                        <img id="category3" class="img img-responsive shadow mb16 pict3"
+                                             src="http://bestja.d3.laboratorium.ee/img/chcepomagac_off.jpg"/>
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6">
                                     <a href="/offers/category/projektowy">
                                         <p>chcę się rozwijać</p>
-                                        <img id="category4" class="img img-responsive shadow mb16 pict4" 
-                                             src="http://bestja.d3.laboratorium.ee/img/chcsierozwijac_off.jpg"/>                                        
+                                        <img id="category4" class="img img-responsive shadow mb16 pict4"
+                                             src="http://bestja.d3.laboratorium.ee/img/chcsierozwijac_off.jpg"/>
                                     </a>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="container">
                             <div class="row text-center mt64 mb64">
                                 <div class="col-md-12">
@@ -154,13 +156,13 @@
                                     </form>
                                 </div>
                                 <div class="col-md-12 text-center container_under_categories">
-                                    <p>Twoja organizacja chciałaby do nas dołączyć? 
-                                        <a href="/page/for_organizations">dowiedz się więcej</a> 
+                                    <p>Twoja organizacja chciałaby do nas dołączyć?
+                                        <a href="/page/for_organizations">dowiedz się więcej</a>
                                         lub <a href="/web/signup">zarejestruj organizację</a>
                                     </p>
                                 </div>
-                            </div>                            
-                        </div>                            
+                            </div>
+                        </div>
                     </section>
                     <section class="oe_snippet_body carry_out_section">
                         <div class="container">
@@ -171,10 +173,10 @@
                                     </h1>
                                     <p>Wolontariat badawczy to szansa na realizację
                                         własnych projektów badawczych.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                        elit, sed do eiusmod tempor incididunt ut labore 
-                                        et dolore magna aliqua. Ut enim ad minim veniam, 
-                                        quis nostrud exercitation ullamco laboris nisi 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi
                                         ut aliquip ex ea commodo consequat.</p>
                                     <p class="mt32 mb64">
                                         <a class="" href="/page/wolontariat_badawczy">więcej o wolontariacie badawczym</a>
@@ -200,7 +202,7 @@
                                 <div class="col-md-8 col-sm-12">
                                     <div class="quote_picture_on_right">
                                         <h2>
-                                            <em>"Robię to dla samej siebie. Zdobywam doświadczenie, 
+                                            <em>"Robię to dla samej siebie. Zdobywam doświadczenie,
                                                 które będę mogła wykorzystać pracując zawodowo."</em>
                                         </h2>
                                         <p>Ola, koordynator projektów miejskich</p>
@@ -313,11 +315,11 @@
                                         <script src="/bestja_frontend_ucw/static/src/js/photostack.js"></script>
                                         <script>
                                             // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
-			
+
                                             new Photostack( document.getElementById( 'photostack-1' ), {
                                             callback : function( item ) {
                                             }
-                                            } );			
+                                            } );
                                         </script>
                                     </div>
                                 </div>

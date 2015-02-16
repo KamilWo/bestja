@@ -7,6 +7,11 @@ jQuery(window).ready(function () {
         } else {
             $('.carousel').height(height);
         }
-    });    
-    /* End of function resize */    
+    });
+    /* End of function resize */
+
+        setInterval(function(){
+        $("#down_arrow_scroll").animate({'margin-bottom':'-10px'},1000);
+        $("#down_arrow_scroll").animate({'margin-bottom':'10px'},1000);
+        },1400);
 });
