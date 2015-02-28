@@ -79,22 +79,20 @@
                                             <t t-esc="offer.display_name"/>
                                         </a>
                                     </h2>
-                                    <h2 class="organization_name">
-                                        <small>
-                                            <t t-esc="offer.project.organization.name"/>
-                                        </small>
-                                    </h2>
-                                    <h2 class="category_name">
+                                    <h3 class="organization_name">
+                                        <t t-esc="offer.project.organization.name"/>
+                                    </h3>
+                                    <h4 class="category_name">
                                         <span>Kategoria:</span>
                                         <t t-esc="offer.category.name"/>
-                                    </h2>
+                                    </h4>
                                     <div class="offer_where">
-                                        <p class="offer_place">
+                                        <h3 class="offer_place">
                                             <t t-esc="offer.city"/>
-                                        </p>
-                                        <p class="offer_how_long" t-if="offer.hours">
+                                        </h3>
+                                        <h3 class="offer_how_long" t-if="offer.hours">
                                             <t t-esc="offer.hours"/> h
-                                        </p>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
